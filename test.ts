@@ -1,5 +1,17 @@
-const xs = [2, 3, 4, 5, 6, 7]
+const xs = ['aba', 'aa', 'ad', 'vcd', 'aba']
 
-for (let i = 0; i < xs.length; i += 2) {
-  console.log(i)
+const compare = (a: string, b: string): number => {
+  if (a.length < b.length) {
+    return 1
+  }
+
+  if (a.length > b.length) {
+    return -1
+  }
+
+  return 0
 }
+
+const res = xs.sort(compare)
+
+console.log(res)
