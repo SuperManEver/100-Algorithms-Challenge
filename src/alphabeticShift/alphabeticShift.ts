@@ -9,5 +9,3 @@ export function alphabeticShift(inputString: string): string {
     .map((n) => String.fromCharCode(n))
     .join('')
 }
-
-console.log(alphabeticShift('crazy'))
