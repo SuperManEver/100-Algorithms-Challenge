@@ -1,5 +1,9 @@
-function arrayReplace(inputArray: number[], elemToReplace: number, substitutionElem: number): number[] {
-   
+function arrayReplace(
+  xs: number[],
+  elemToReplace: number,
+  substitutionElem: number
+): number[] {
+  return xs.map((n) => (n === elemToReplace ? substitutionElem : n))
 }
 
-console.log(arrayReplace([1, 2, 1], 1, 3));
+export default arrayReplace
